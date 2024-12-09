@@ -10,7 +10,7 @@ jobs:
   build: 
     runs-on: ubuntu-latest 
     
-    
+
     steps:
       - uses: actions/checkout@v4 
       - name: Use Node.js 20.x 
@@ -33,7 +33,7 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }} 
           
       - name: Build Docker image 
-        run: docker build -t dweblab/songdo . 
+        run: docker build -t kylelee123123/songdo . 
         
       - name: Push docker image 
         run: docker push dweblab/songdo:latest
