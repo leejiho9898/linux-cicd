@@ -36,4 +36,4 @@ jobs:
         run: docker build -t kylelee123123/songdo . 
         
       - name: Push docker image 
-        run: docker push dweblab/songdo:latest
+        run: docker push kylelee123123/songdo:latest
